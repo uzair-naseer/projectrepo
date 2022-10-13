@@ -11,7 +11,7 @@
    - name: copy index.html
      ansible.builtin.copy:
       src: index.html
-      dest: /var/www.html
+      dest: /var/www/html
       mode: 0644
       owner: root
       group: root
