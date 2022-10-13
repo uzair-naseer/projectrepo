@@ -8,13 +8,13 @@
      ansible.builtin.package:
        name: httpd
        state: latest
-  # - name: copy index.html
-   #  ansible.builtin.copy:
-    #  src: index.html
-     # dest: /var/www.html
-     # mode: 0644
-     # owner: root
-     # group: root
+   - name: copy index.html
+     ansible.builtin.copy:
+      src: index.html
+      dest: /var/www.html
+      mode: 0644
+      owner: root
+      group: root
    - name: start https server
      ansible.builtin.service:
        name: httpd
